@@ -66,17 +66,14 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 40%;
 }
 
 /* Media query for larger screens */
 @media (min-width: 768px) {
-    .container {
-        flex-direction: row;
-    }
-
     .video-container {
-        max-width: 640px; /* Adjust the max-width as needed for larger screens */
-        margin: 0 auto; /* Center the video container */
+        max-width: 500px; /* Adjust the max-width as needed for larger screens */
+        padding-bottom: calc(500px * 9 / 16); /* Maintain 16:9 aspect ratio for max-width */
+
     }
 }
